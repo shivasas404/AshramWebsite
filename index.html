@@ -86,7 +86,39 @@
       color: #e39165;
       margin-bottom: 15px;
     }
+    .scrolling-banner {
+      background-color: #FDE68A;
+      color: #7C2D12;
+      font-weight: 500;
+      overflow: hidden;
+      white-space: nowrap;
+      position: relative;
+    }
 
+    .scrolling-banner a {
+      color: #7C2D12;
+      text-decoration: underline;
+      margin-right: 30px;
+    }
+
+    .scrolling-text {
+      display: inline-block;
+      animation: scroll-left 15s linear infinite;
+      padding: 8px 0;
+    }
+
+    .scrolling-banner:hover .scrolling-text {
+      animation-play-state: paused;
+    }
+
+    @keyframes scroll-left {
+      from {
+        transform: translateX(100%);
+      }
+      to {
+        transform: translateX(-100%);
+      }
+    }
     /* Footer */
     footer {
       background-color: #D4BCA2;
@@ -156,6 +188,15 @@
     </div>
   </div>
 
+  <!-- Scrolling Event Banner -->
+  <div class="scrolling-banner">
+    <div class="scrolling-text">
+      <a href="#">✨ Sadbhava 2025 Registrations Open Now!</a>
+      <a href="#">🌕 Next Satsanga: Full Moon – April 23</a>
+      <a href="#">📖 Vachana Manthana – Weekly on Sundays</a>
+    </div>
+  </div>
+
   <!-- Welcome Message -->
   <div class="container text-center my-5">
     <h2>Welcome to Shri Gurudevashrama</h2>
@@ -168,7 +209,7 @@
   <div class="container my-5">
     <div class="row text-center">
       <div class="col-md-4 mb-4">
-        <a href="#" class="text-decoration-none text-dark">
+        <a href="sadbhava.html" class="text-decoration-none text-dark">
           <div class="card p-4 shadow-sm activity-card">
             <i class="fas fa-snowflake"></i>
             <h5 class="mt-3">Sadbhava</h5>

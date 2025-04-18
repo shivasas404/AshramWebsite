@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shri Gurudevashrama</title>
+  <link rel="icon" href="images/logo-Without-Bg.ico" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+  <style>
+    body {
+      background-color: #fffaf5;
+    }
+
+    /* Top Strip */
+    .top-strip {
+      background-color: #D4BCA2;
+      color: #333;
+      font-size: 14px;
+      padding: 6px 15px;
+      border-bottom: 1px solid #c3ae96;
+    }
+    .top-strip a {
+      color: #333;
+      margin-left: 12px;
+      text-decoration: none;
+    }
+
+    /* Navbar */
+    .navbar-spiritual {
+      background-color: #48341F;
+    }
+
+    /* Logo on Carousel */
+    .logo-overlay {
+      position: absolute;
+      top: 20%;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 10;
+      text-align: center;
+    }
+    .logo-overlay img {
+      max-height: 150px;
+    }
+
+    /* .carousel-inner img {
+      height: 440px;
+      object-fit: cover;
+    } */
+    /* Smartphones (landscape) ----------- */
+    @media only screen 
+    and (min-width : 321px) {
+      .carousel-inner img {
+        height: 240px;
+        object-fit: cover;
+      }
+    }
+    /* Desktops and laptops ----------- */
+    @media only screen 
+    and (min-width : 1224px) {
+      .carousel-inner img {
+        height: 440px;
+        object-fit: cover;
+      }
+    }
+
+    /* Large screens ----------- */
+    @media only screen 
+    and (min-width : 1824px) {
+      .carousel-inner img {
+        height: 440px;
+        object-fit: cover;
+      }
+    }
+    /* Cards */
+    .activity-card {
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+    .activity-card:hover {
+      transform: scale(1.03);
+    }
+    .activity-card i {
+      font-size: 40px;
+      color: #e39165;
+      margin-bottom: 15px;
+    }
+
+    .section-heading {
+      color: #D97706;
+    }
+
+    .year-card {
+      border-left: 5px solid #D97706;
+      background-color: #fff;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      transition: all 0.3s ease;
+    }
+
+    .year-card:hover {
+      background-color: #FEF3C7;
+    }
+    /* Footer */
+    footer {
+      background-color: #D4BCA2;
+      color: #333;
+      padding: 20px 0;
+    }
+    footer a {
+      color: #333;
+      margin: 0 10px;
+    }
+  </style>
+</head>
+<body>
+
+   <!-- Top Strip -->
+   <div class="top-strip d-flex justify-content-between align-items-center">
+    <div>📞 +91 98765 43210 | ✉️ connect@sunrisespiritual.org</div>
+    <div>
+      <a href="https://www.facebook.com/people/Gurudevashram-Kakhandaki/100079731694158/" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://www.youtube.com/@shrigurudevashramkakhandak9348" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-spiritual">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">Shri Gurudevashrama</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="aboutus.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="activities.html">Activities</a></li>
+          <li class="nav-item"><a class="nav-link" href="contactus.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <section class="py-5">
+    <div class="container">
+      <h1 class="section-heading text-center mb-4">Sadbhava – Youth Personality Development</h1>
+      <p class="lead text-center mb-5">
+        <strong>Sadbhava</strong> is a three-day immersive program held in the spiritual atmosphere of our Ashram, 
+        designed to empower youth with values, purpose, and personality development tools. 
+        Resource persons, thought leaders, and achievers from various walks of life guide participants with real-life insights and inspiration.
+      </p>
+
+      <div class="row">
+        <div class="col-md-6">
+          <h4 class="text-warning">Program Highlights:</h4>
+          <ul>
+            <li>Talks by resource persons and achievers</li>
+            <li>Interactive sessions and personality workshops</li>
+            <li>Stay at Ashram with simple spiritual discipline</li>
+            <li>Open to youth (ages 16-30) who register</li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <img src="images/sadbhava-session.jpeg" class="img-fluid rounded shadow" alt="Sadbhava Session">
+        </div>
+      </div>
+
+      <hr class="my-5"/>
+
+      <h3 class="mb-4 text-center text-warning">Year-wise Sadbhava Events</h3>
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <a href="#" class="year-card d-block text-dark text-decoration-none">
+            <h5>Sadbhava-1(2025)</h5>
+            <p>Theme: 'ರಾಗ, ದ್ವೇಷ ರಹಿತ ಸುಂದರ ಬದುಕು'</p>
+          </a>
+          <!-- Add more years as needed -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center">
+    <div class="container">
+      <p>&copy; 2025 Shri Gurudevashrama Kalyana Kakandaki. All rights reserved.</p>
+      <p>
+        <a href="https://www.facebook.com/people/Gurudevashram-Kakhandaki/100079731694158/" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.youtube.com/@shrigurudevashramkakhandak9348" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+      </p>
+    </div>
+  </footer>
+
+
+  <!-- Bootstrap & Icons -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</body>
+</html>
